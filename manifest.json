@@ -1,0 +1,16 @@
+{
+  "name": "Papa Pig Chrome Extension",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Productive chrome extension that tracks hours of studying on apps that aren't Youtube, Netflix, and other unproductive sites. You can see how much your friends are studying and there will also be fun, simple games to play during breaks. The extension can also allow you to use different studying methods and give you breaks accordingly. Papa Pig will motivate the user throughout their experience!",
+  "permissions": ["tabs", "storage", "activeTab"],
+  "icons": {
+    "48": "pig1.png"
+  },
+  "background": {
+    "service-worker": "background.js"
+  },
+  "action": {
+      "default_popup": "popup.html"
+  }
+}

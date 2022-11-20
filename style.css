@@ -1,0 +1,82 @@
+html {
+  height: 450px;
+  width: 500px;
+}
+
+img {
+  height: 400px;
+  width: 500px;
+}
+
+
+h1 {
+  font-size: 20w;
+}
+
+p {
+  /* font-size: 16px; */
+  font-size: 10vw;
+}
+
+.container{
+  text-align: center;
+/* Or we could do #CCC */
+  position: relative;
+  font-family: verdana;
+}
+
+/* .container.bar{
+  position: absolute;
+  height: 100%;
+  background-color: rgb(red, green, blue);
+  animation: progress-animation 5s forwards;
+} */
+
+.progress_label {
+    float: left;
+    margin-right: 1em;
+}
+
+.progress {
+  position: absolute;
+  margin: auto;
+  padding: 2px;
+  width: 100%;
+  max-width: 600px;
+  border: 3px solid black;
+  border-radius: 20px;
+  height: 30px;
+}
+
+.progress.progress_bar {
+  height: 100%;
+  width: 20%; /* Progress on progress bar */
+  /* background-color: #05e35e; */
+  background: repeating-linear-gradient(
+    135deg,
+    #E5806A,
+    #E5806A 20px,
+    #CF2906 20px,
+    #CF2906 40px
+  );
+  /* animation: progress_animation 5s forward; */
+}
+
+.progress.progress_bar.progress_text {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:0;
+  font-size:20px;
+  color: black;
+  white-space: nowrap;
+}
+/* #play-animation{
+  animation: progress-animation 5s forward;
+  // animation: progress_animation 3s infinite;
+} */
+
+@keyframes progress_animation{
+  from {width: 0%;}
+  to {width: 100%;}
+}
